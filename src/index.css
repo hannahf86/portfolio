@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography */
+
+h1 {
+    font-family: 'Maven Pro', sans-serif;
+    color: #F97316;
+    font-weight: 800;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+h3 {
+    font-family: 'Maven Pro', sans-serif;
+    color: #F97316;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: 'Maven Pro', sans-serif;
+    color:#5a5a5a;
+}
+
+p {
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+}
+
+li {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 0.9em;
+    color: #5a5a5a;
+    list-style-type: none;
+    display: inline-block;
+}
+
+button {
+    font-family: 'Maven Pro', sans-serif;
+    color: #F97316;
+    font-size: 1em;
+}
+
+a {
+    font-family: 'Ebrima';
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+}
+
+/* Other */
+
+.chequeSplitVideo {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .chequeSplitVideo iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  
