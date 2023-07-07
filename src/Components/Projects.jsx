@@ -45,8 +45,11 @@ function Projects() {
           </a>
         </div>
 
+        <a href='/casestudytemplate'><p className='text-black'>Case Study Template</p></a>
         <div className='pb-20 lg:pb-60'></div>
       </div>
+
+
 
     </div>
   );

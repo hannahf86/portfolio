@@ -23,27 +23,27 @@ const MainNav = () => {
             <div className='fixed w-full h-screen bg-[#213251]/90 flex flex-col justify-center items-center z-20'>
 
                 <a href='/' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
                 <span>HOME</span>
                 </a>
 
                 <a href='#projects' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
                 <span>PROJECTS</span>
                 </a>
 
                 <a href='#skills' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
                 <span>SKILLS</span>
                 </a>
 
                 <a href='#experience' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
                 <span>EXPERIENCE</span>
                 </a>
 
                 <a href='#contact' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer hover:scale-110 ease-in duration-200'>
+                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
                 <span>CONTACT</span>
                 </a>
 
@@ -53,7 +53,7 @@ const MainNav = () => {
             ''
         )}
 
-        {/* --- side nav --- */}
+        {/* --- Desktop/ Tablet Side Nav --- */}
         <div className='lg:block hidden fixed top-[25%] z-10 right-0'>
             <div className='flex flex-col'>
 
