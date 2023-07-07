@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { ImCross } from 'react-icons/im';
 import { Link } from 'react-scroll';
 
 const MainNav = () => {
@@ -10,44 +9,48 @@ const MainNav = () => {
         setNav(!nav)
     };
 
+    const styles = {
+        navSquare: 'absolute bg-[#F97316] w-16 h-16 right-0 fixed flex justify-center align-middle lg:hidden cursor-pointer z-0',
+        squareLink: 'bg-[#F97316] cursor-pointer m-auto lg:hidden',
+        navBackground: 'fixed w-full h-screen bg-[#213251]/90 flex flex-col justify-center items-center z-99',
+        navBtn: 'w-[75%] flex justify-center items-center rounded-full shadow-sm bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer',
+    }
+
     return (
-    <div id='home'> {/* --- mobile nav --- */} 
+    <div id='home'> 
 
-      <div onClick={handleNav} className='bg-[#F97316] w-16 h-16 right-0 fixed flex justify-center align-middle lg:hidden cursor-pointer'>
-        <AiOutlineMenu color='white' onClick={handleNav} className='bg-[#F97316] cursor-pointer m-auto lg:hidden' />
-      </div>
 
-      {
-        nav ? ( // ternary operator for if statement
-            
-            <div className='fixed w-full h-screen bg-[#213251]/90 flex flex-col justify-center items-center z-20'>
+    {/* --- mobile nav --- */}
+    <div onClick={handleNav} className={styles.navSquare}>
+    <AiOutlineMenu color='white' onClick={handleNav} className={styles.squareLink} />
+    </div>
 
-                <a href='/' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
-                <span>HOME</span>
-                </a>
+    {
+    nav ? ( // ternary operator for if statement
+        
+        <div className={styles.navBackground}>
 
-                <a href='#projects' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
-                <span>PROJECTS</span>
-                </a>
+            <Link activeClass="active" to="/" spy={true} smooth={true} offset={50} duration={500} className={styles.navBtn}>
+            <button>HOME</button>
+            </Link>
 
-                <a href='#skills' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
-                <span>SKILLS</span>
-                </a>
+            <Link activeClass="active" to="projects" spy={true} smooth={true} offset={50} duration={500} className={styles.navBtn}>
+            <button>PROJECTS</button>
+            </Link>
 
-                <a href='#experience' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
-                <span>EXPERIENCE</span>
-                </a>
+            <Link activeClass="active" to="skills" spy={true} smooth={true} offset={50} duration={500} className={styles.navBtn}>
+            <button>SKILLS</button>
+            </Link>
 
-                <a href='#contact' className='w-[75%] flex justify-center items-center rounded-full shadow-sm 
-                bg-gray-100 shadow-gray-200 m-4 p-4 cursor-pointer'>
-                <span>CONTACT</span>
-                </a>
+            <Link activeClass="active" to="experience" spy={true} smooth={true} offset={50} duration={500} className={styles.navBtn}>
+            <button>EXPERIENCE</button>
+            </Link>
 
-            </div>
+            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500} className={styles.navBtn}>
+            <button>CONTACT</button>
+            </Link>
+
+        </div>
         )
         : ( // ternary operator for else 
             ''
