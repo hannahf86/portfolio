@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterSquare } from './react-icons/ai'
 
 const Top = () => {
 
@@ -39,9 +40,9 @@ const Top = () => {
             </div>
 
             <div className='text-center pb-40'>
-                <a href='#'><img src='/facebook.png' className='max-w-16 px-16 py-2 mt-12'></img></a>
-                <a href='#'><img src='/instagram.png' className='max-w-16 px-16 py-2'></img></a>
-                <a href='#'><img src='/linkedin.png' className='max-w-16 px-16 py-2'></img></a>
+                <a href='https://github.com/hannahf86'><AiFillGithub className='max-w-16 px-16 py-2 mt-12' /></a>
+                <a href='https://www.linkedin.com/in/hannah-feehan/'><AiFillLinkedin className='max-w-16 px-16 py-2' /></a>
+                <a href='https://twitter.com/HannahFDev'><AiFillTwitterSquare className='max-w-16 px-16 py-2' /></a>
             </div> 
 
         </div>
