@@ -8,12 +8,17 @@ import music from '../assets/music.png';
 
 function Projects() {
   
+  const styles = {
+    title: 'text-center py-16 sm:py-8 md:py-8 lg:py-16',
+
+  }
+
   return (
     <div id='projects' className='bg-white max-w-[1040] m-auto'>
 
       <div>
-      <h1 className='text-center py-8 sm:py-12 md:py-12 lg:py-20'>PROJECTS</h1>
-      <h4 className='text-gray-800 text-center text-md mb-8 mx-16 sm:mx-12 md:text-center lg:text-center'>Please feel free to browse my most recent projects. Get in touch for more info!</h4>
+      <h1 className={styles.title}>PROJECTS</h1>
+      <h4 className='text-gray-800 text-center text-md mb-16 mx-16 sm:mx-12 md:text-center lg:text-center'>Please feel free to browse my most recent projects. Get in touch for more info!</h4>
 
       <div className='grid min-[1285px]:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mx-20 sm:mx-20 md:mx-16 lg:mx-32 '>
           <a href='#' className='mb-12'>

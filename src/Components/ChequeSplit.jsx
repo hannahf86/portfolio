@@ -107,9 +107,6 @@ const ChequeSplit = () => {
           <p className='text-slate-800 col-start-3 col-end-5 p-2'>Again, I kept the prototyping very simple to provide the quick turn around requested by the clients. 
           I was able to provide a very basic idea of how the app would look and feel.
           </p>
-          <div className='col-start-3 col-end-5 pb-20 pt-8 px-2'>
-            <Player src='https://www.youtube.com/watch?v=tkRejk8zFSA&t=23s' />
-          </div>
 
           <h3 className='col-start-2 justify-start font-bold text-lg p-2'>Outcome</h3>
           <p className='text-slate-800 col-start-3 col-end-5 p-2'>The clients were extremely happy with stage one of the app and have requested a complete prototype 

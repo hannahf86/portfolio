@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterSquare } from './react-icons/ai'
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai'
 
 const Top = () => {
 
@@ -36,13 +36,13 @@ const Top = () => {
             <div className='px-52 '>
                 <h2 className='pt-48 pb-4 text-2xl'>Hi, my name is</h2>
                 <h1 className='pb-4 text-8xl'>HANNAH FEEHAN</h1>
-                <p className='pt-4 pb-32 text-2xl w-3/4'>I'm a front-end developer with UI/UX experience who can help you with all your digital needs.</p>
+                <p className='pt-4 pb-28 text-2xl w-3/4'>I'm a front-end developer with UI/UX experience who can help you with all your digital needs.</p>
             </div>
 
             <div className='text-center pb-40'>
-                <a href='https://github.com/hannahf86'><AiFillGithub className='max-w-16 px-16 py-2 mt-12' /></a>
-                <a href='https://www.linkedin.com/in/hannah-feehan/'><AiFillLinkedin className='max-w-16 px-16 py-2' /></a>
-                <a href='https://twitter.com/HannahFDev'><AiFillTwitterSquare className='max-w-16 px-16 py-2' /></a>
+                <a href='https://github.com/hannahf86' target="_blank"><AiFillGithub size={50} color='#506995' className='ml-52 mt-4'/></a>
+                <a href='https://www.linkedin.com/in/hannah-feehan/' target="_blank"><AiFillLinkedin size={50}color='#506995' className='ml-52 mt-6'/></a>
+                <a href='https://twitter.com/HannahFDev' target="_blank"><AiFillTwitterSquare size={50} color='#506995' className='ml-52 mt-6'/></a>
             </div> 
 
         </div>

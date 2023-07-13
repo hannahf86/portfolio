@@ -18,16 +18,16 @@ import zeplin from '../assets/icons/Zeplin.png'
 const Skills = () => {
   
   const styles = {
-    title: 'text-center py-8 sm:py-12 md:py-12 lg:py-20',
+    title: 'text-center py-16 sm:py-8 md:py-8 lg:py-16',
     description: 'text-white text-center text-md mb-8 mx-16 sm:mx-12 md:text-center lg:text-center',
-    skillsItem: 'bg-white mx-20 lg:mx-40 grid grid-cols-3 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols',
+    skillsItem: 'bg-white mx-20 lg:mx-40 grid grid-cols-3 lg:grid-cols-8 md:grid-cols-4 sm:grid-cols',
   }
   
   return (
     <div id='skills' className='bg-[#213251] w-full'>
       <h1 className={styles.title}>SKILLS</h1>
-      <h4 className={styles.description}>I believe in expanding on my existing skills and learning new ones in order to be a successful developer.</h4>
-      <h4 className={styles.description}>Below is a list of the main areas I work in.</h4>
+      <h4 className={styles.description}>I believe in expanding on my existing skills and learning new ones in order to be a successful developer. 
+      <br /> <br /> Below is a list of the main languages, frameworks and databases I work in.</h4>
     
       <div className={styles.skillsItem}>
         <SkillsItem img={html}/>
@@ -36,16 +36,26 @@ const Skills = () => {
         <SkillsItem img={react}/>
         <SkillsItem img={tailwind}/>
         <SkillsItem img={bootstrap}/>
+        {/* --- TO ADD NEXT, VITE, TYPESCRIPT, REDUX --- */ }
+
+
         <SkillsItem img={json}/>
         <SkillsItem img={mysql}/>
         <SkillsItem img={nodejs}/>
         <SkillsItem img={php}/>
+        {/* --- TO ADD MONGO DB, PostgresSQL, MOCHA/CHAI --- */ }
+
         <SkillsItem img={adobe}/>
         <SkillsItem img={unity}/>
         <SkillsItem img={zeplin} />
-      </div> {/* --- TO ADD FIGMA, NEXT, VITE, ANGULAR, TYPESCRIPT, MONGO DB --- */ }
+      </div> {/* --- TO ADD FIGMA --- */ }
 
-      <div className='text-center pb-20 lg:pb-60'></div>
+      {/* --- DROP DOWN CERTIFICATE SECTION (TBC) --- */ }
+
+      {/* --- PDF OF RESUME --- */ }
+
+
+      <div className='text-center pb-20 lg:pb-32'></div>
     </div>
   )
 }
