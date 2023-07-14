@@ -22,7 +22,7 @@ function Projects() {
       <h4 className={styles.description}>Please feel free to browse my most recent projects. Get in touch for more info!</h4>
 
       <div className={styles.projectDisplay}>
-          <a href='./Components/caseStudies/DBTApp' className='mb-12'>
+          <a href='#dbtApp' className='mb-12'>
             <ProjectItem 
               img={dbtApp} 
               title={'Dialectical Behaviour Therapy App'} 
