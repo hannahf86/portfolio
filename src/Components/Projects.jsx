@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectItem from './ProjectItem';
-import asdaCoffee from '../assets/asdaCoffee.png';
-import caredial from '../assets/caredial.png';
+import dbtApp from '../assets/dbtApp.png';
+import fullStackRevision from '../assets/fullStackRevision.png';
 import chequeSplt from '../assets/chqueSplt.png';
-import music from '../assets/music.png';
+import pfMusicPubs from '../assets/pfMusicPubs.png';
 
 
 function Projects() {
@@ -23,16 +23,16 @@ function Projects() {
       <div className='grid min-[1285px]:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mx-20 sm:mx-20 md:mx-16 lg:mx-32 '>
           <a href='#' className='mb-12'>
             <ProjectItem 
-              img={asdaCoffee} 
+              img={dbtApp} 
               title={'Indulgent Redesign for Coffee Selection'} 
               skills={'Adobe XD, Illustrator'}/>
           </a>
 
           <a href='#' className='mb-12'>
             <ProjectItem 
-              img={caredial} 
-              title={'Redesign for a Care provider'} 
-              skills={'Adobe XD, Illustrator'}/>
+              img={fullStackRevision} 
+              title={'Revision and reference tool for developers'} 
+              skills={'React, Typescript, Tailwind'}/>
           </a>
 
           <a href='/chequesplit' className='mb-12'>
@@ -44,9 +44,9 @@ function Projects() {
 
           <a href='#' >
             <ProjectItem 
-              img={music} 
-              title={'Music Practice Journal App'} 
-              skills={'Adobe XD, Illustrator'}/>
+              img={pfMusicPubs} 
+              title={'Full-stack e-Commerce website for music publisher'} 
+              skills={'React, Next.js, Typescript, Tailwind, PostgresSQL, Stripe'}/>
           </a>
         </div>
 
